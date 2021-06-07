@@ -26,7 +26,16 @@ Je vous invite à ouvrir un terminal dans le dossier du projet, puis à exécute
 
 Une fois ces commandes effectuées, deux dossiers "node_modules" ont été créé, un à la racine du projet, puis un autre dans le dossier "backend".
 
-### 2 - Lancer le projet 🚀
+### 3 - Ajouter les variables d'environnement 🔗
+
+Pour des raisons de sécurité, le TOKEN d'authentification, et l'URL vers la base de données ne sont pas codés en dur. À la place, des chemins vers des variables d'environnement y sont placé. Ces fameuses variables d'environnement sont stockées dans un fichier ".env" que seul moi [Alexandre LEMAS](https://www.linkedin.com/in/alexandre-lemas) possède. 
+
+Si vous souhaitez obtenir ce fichier, contactez-moi sur [Linkedin](https://www.linkedin.com/in/alexandre-lemas).
+
+Une fois ce fichier récupéré, placez le dans le dossier "backend".
+
+
+### 4 - Lancer le projet 🚀
 Je vous invite à ouvrir un terminal dans le dossier du projet, puis à exécuter les commandes suivantes, une par une :
 
 `cd backend`
