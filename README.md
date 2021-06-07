@@ -18,6 +18,8 @@ Je vous invite à ouvrir un terminal dans le dossier du projet, puis à exécute
 
 `cd backend`
 
+`mkdir images`
+
 `npm install`
 
 `cd ../`
