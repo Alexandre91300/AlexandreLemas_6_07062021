@@ -7,8 +7,9 @@ const app = express();
 const authRoutes = require('./routes/auth');
 const saucesRoutes = require('./routes/sauces');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-mongoose.connect('mongodb+srv://User:azerty@openclassroomsp6.9ek6v.mongodb.net/OpenClassroomsP6?retryWrites=true&w=majority',
+mongoose.connect(`${process.env.MONGOOSE_CONNECT}`,
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connection to MongoDB successful'))
