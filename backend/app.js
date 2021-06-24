@@ -8,6 +8,17 @@ const authRoutes = require('./routes/auth');
 const saucesRoutes = require('./routes/sauces');
 const mongoose = require('mongoose');
 require('dotenv').config();
+const helmet = require('helmet');
+const rateLimit = require("express-rate-limit");
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, 
+  max: 100 
+});
+
+app.use(limiter); // Against brute force attacks
+
+app.use(helmet()); // Addition of a security layer of the http header
 
 mongoose.connect(`${process.env.MONGOOSE_CONNECT}`,
   { useNewUrlParser: true,
